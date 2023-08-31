@@ -49,7 +49,7 @@ Deploy Skooner with something like the following...
 NOTE: never trust a file downloaded from the internet. Make sure to review the contents of [kubernetes-skooner.yaml](https://raw.githubusercontent.com/skooner-k8s/skooner/master/kubernetes-skooner.yaml) before running the script below.
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/skooner-k8s/skooner/master/kubernetes-skooner.yaml
+kubectl apply -f https://raw.githubusercontent.com/arffsaad/skooner/master/kubernetes-skooner.yaml
 ```
 
 To access skooner, you must make it publicly visible. If you have an ingress server setup, you can accomplish by adding a route like the following:
