@@ -35,9 +35,10 @@ metadata:
   name: skooner
   namespace: kube-system
 spec:
-  type: LoadBalancer  # Change the type to LoadBalancer
   ports:
-    - port: 9070     # Expose on port 9070
+    - port: 80
       targetPort: 4654
+      nodePort: 30030
   selector:
     k8s-app: skooner
+  type: NodePort
